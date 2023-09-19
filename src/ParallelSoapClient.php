@@ -593,10 +593,10 @@ class ParallelSoapClient extends \SoapClient implements LoggerAwareInterface
      * @param string $method
      * @param string|array $args
      *
-     * @return string $res
+     * @return mixed $res
      * @throws \Exception|\SoapFault|
      */
-    public function getResponseResult(string $method, $args): string
+    public function getResponseResult(string $method, $args): mixed
     {
         $this->soapMethod = static::GET_RESPONSE_CONST;
 
